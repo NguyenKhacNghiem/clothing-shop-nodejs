@@ -1,0 +1,62 @@
+<div class="container pt-3">
+    <h2 class="text-primary">Thêm sản phẩm mới</h2>
+
+    <div class="form-outline mb-2">
+        <input name="name" type="text" id="name" class="form-control" />
+        <label class="form-label" for="name">Tên sản phẩm</label>
+    </div>
+
+    <div class="form-outline mb-2">
+        <input name="color" type="text" id="color" class="form-control" />
+        <label class="form-label" for="color">Màu sắc</label>
+    </div>
+
+    <div class="form-outline mb-2">
+        <textarea class="form-control" id="description" rows="4"></textarea>
+        <label class="form-label" for="description">Mô tả</label>
+    </div>
+
+    <div class="form-outline mb-2">
+        <input type="number" id="price" class="form-control" min="1"/>
+        <label class="form-label" for="price">Giá tiền</label>
+    </div>
+
+    <div class="custom-file mb-2">
+        <input type="file" class="custom-file-input" id="image" accept="image/*">
+        <label class="custom-file-label" for="image">Upload ảnh</label>
+    </div>
+
+    <select class="mb-2 custom-select" name="brand" id="brand">
+        <option value="" selected>Thương hiệu</option>
+        <option value="Yame">Yame</option>
+        <option value="5TheWay">5TheWay</option>
+        <option value="DirtyCoins">DirtyCoins</option>
+        <option value="MWC">MWC</option>
+        <option value="Degrey">Degrey</option>
+    </select>
+
+    <select class="mb-2 custom-select" name="catalog" id="catalog">
+        <option value="" selected>Danh mục</option>
+        <optgroup label="Áo">
+            <option value="Áo thun">Áo thun</option>
+            <option value="Áo khoác">Áo khoác</option>
+            <option value="Áo sơ mi">Áo sơ mi</option>
+        </optgroup>
+        <optgroup label="Quần">
+            <option value="Quần jean">Quần jean</option>
+            <option value="Quần kaki">Quần kaki</option>
+            <option value="Quần short">Quần short</option>
+        </optgroup>
+    </select>
+    
+    <div class="form-outline mb-2">
+        <input type="number" id="quantity" class="form-control" min="0"/>
+        <label class="form-label" for="quantity">Số lượng</label>
+    </div>
+
+    <button onclick="add()" class="btn btn-primary">Thêm</button>
+    <button onclick="reset()" class="btn btn-secondary">Xóa</button>
+</div>
+
+<script src="/js/main.js"></script>
+<script src="/js/add-product.js"></script>
